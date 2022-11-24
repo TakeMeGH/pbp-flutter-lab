@@ -48,3 +48,11 @@
 4. navigator pada flutter diimplementasikan menggunakan stack. Sehingga jika user ingin membuka page baru maka akan dipush page tersebut kedalam stack. Sebaliknya jika ingin kembali ke halaman sebelumnya maka element dari stack tersebut akan dipop.
 
 5. Pertama dibuat dahulu navigation menggunakan drawer yang berisi list view untuk membuat widget-widget untuk melakukan navigasi ke page yang berbeda. Kemudian untuk bagian form implementasikan menggunakan TextFormField dan DropdownButton untuk menerima input dari user. Kemudian form yang sudah diisi akan disimpan ketika tombol submit ditekan. Data tersebut akan dimasukan kedalam list 2d yang nantinya data-data yang ada dilist tersebut akan ditampilkan. Untuk menampilkan data akan digunakan widget row, columnm dan juga text.
+---
+## Tugas 8
+---
+1. Dapat dilakukan pengambilan JSON tanpa menggunakan model. Namun, membuat model terlebih dahulu akan lebih baik karena akan memudahkan penggunaan JSON yang diambil tersebut.
+2. CheckBox : Menampilkan checkbox
+   futurebuilder : widget yang dibuild berdasarkan interaksi antara snapshot dengan flutter
+3. Pertama buat model yang sesuai dengan data JSON yang ingin diambil. Kemudian ambil data JSON dari link yang sudah disiapkan. Data JSON tersebut akan diencode agar dapat digunakan pada flutter. Data yang sudah diencode tersebut akan dikembalikan dalam bentuk list. List tersebut berisi data-data tersebut dapat digunakan pada flutter. Dengan widge futurebuilder dapat membentuk widget berdasarkan data-data json yang difetch tersebut.
+4. Pertama buat model untuk menerima json dari model mywatchlist. Kemudian lakukan fetch terhadap json berdasarkan link heroku yang sudah dibuat pada tugas sebelumnya. Selanjutnya tampilkan data yang sudah difetch pada page my_watch_list_page. Kemudian buat page yang berisi detail dari setiap data yang sudah difetch. Page ini dibuat dengan diberi argument sesuai dari tiap data-data yang sudah difetch. Untuk bonus implementasikan checkbox dan beri borderline pada checkbox. Agar data dapat diupdate cukup ambil data json pada inisiasi build.
