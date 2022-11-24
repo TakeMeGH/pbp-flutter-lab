@@ -49,7 +49,7 @@
 
 5. Pertama dibuat dahulu navigation menggunakan drawer yang berisi list view untuk membuat widget-widget untuk melakukan navigasi ke page yang berbeda. Kemudian untuk bagian form implementasikan menggunakan TextFormField dan DropdownButton untuk menerima input dari user. Kemudian form yang sudah diisi akan disimpan ketika tombol submit ditekan. Data tersebut akan dimasukan kedalam list 2d yang nantinya data-data yang ada dilist tersebut akan ditampilkan. Untuk menampilkan data akan digunakan widget row, columnm dan juga text.
 ---
-## Tugas 8
+## Tugas 9
 ---
 1. Dapat dilakukan pengambilan JSON tanpa menggunakan model. Namun, membuat model terlebih dahulu akan lebih baik karena akan memudahkan penggunaan JSON yang diambil tersebut.
 2. CheckBox : Menampilkan checkbox
