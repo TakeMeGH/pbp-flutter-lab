@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/main.dart';
-import 'package:counter_7/form.dart';
-import 'package:counter_7/Data_Budget.dart';
-import 'package:counter_7/drawer.dart';
-
+import 'package:counter_7/page/form.dart';
+import 'package:counter_7/page/Data_Budget.dart';
+import 'package:counter_7/page/drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +29,6 @@ class MyHomePage extends StatefulWidget {
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
-
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -94,15 +91,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            if(_counter % 2 == 1)...[
+            if (_counter % 2 == 1) ...[
               Text(
                 'GANJIL',
                 style: TextStyle(
                   color: Colors.blue,
                 ),
               ),
-            ]
-            else...[
+            ] else ...[
               Text(
                 'GENAP',
                 style: TextStyle(
@@ -122,36 +118,34 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            if(_counter == 0)...[
+            if (_counter == 0) ...[
               Visibility(
                 visible: false,
-                child:Align(
+                child: Align(
                   alignment: Alignment.bottomLeft,
-                  child:FloatingActionButton(
+                  child: FloatingActionButton(
                     onPressed: _decrementCounter,
                     tooltip: 'Decrement',
                     child: const Icon(Icons.remove),
                   ),
                 ),
               ),
-            ] 
-            else...[
+            ] else ...[
               Align(
                 alignment: Alignment.bottomLeft,
-                child:FloatingActionButton(
-                      onPressed: _decrementCounter,
-                      tooltip: 'Decrement',
-                      child: const Icon(Icons.remove),
+                child: FloatingActionButton(
+                  onPressed: _decrementCounter,
+                  tooltip: 'Decrement',
+                  child: const Icon(Icons.remove),
                 ),
               ),
             ],
-            
             Align(
               alignment: Alignment.bottomRight,
-              child:FloatingActionButton(
-                    onPressed: _incrementCounter,
-                    tooltip: 'Increment',
-                    child: const Icon(Icons.add),
+              child: FloatingActionButton(
+                onPressed: _incrementCounter,
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
               ),
             ),
           ],
