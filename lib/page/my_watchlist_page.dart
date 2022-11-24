@@ -99,7 +99,7 @@ class _MyWatchListPage extends State<MyWatchListPage> {
                                     value:
                                         (snapshot.data![index].fields.watched ==
                                             'true'),
-                                    activeColor: Colors.green,
+                                    activeColor: Colors.blue,
                                     onChanged: (bool? value) {
                                       setState(() {
                                         snapshot.data![index].fields.watched =
