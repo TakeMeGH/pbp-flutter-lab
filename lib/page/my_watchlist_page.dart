@@ -76,10 +76,10 @@ class _MyWatchListPage extends State<MyWatchListPage> {
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(15.0),
-                                border: snapshot.data![index].fields.watched ==
-                                        "true"
-                                    ? Border.all(color: Colors.green)
-                                    : Border.all(color: Colors.red),
+                                border:
+                                    snapshot.data![index].fields.watched == true
+                                        ? Border.all(color: Colors.green)
+                                        : Border.all(color: Colors.red),
                                 boxShadow: const [
                                   BoxShadow(
                                       color: Colors.black, blurRadius: 2.0)
@@ -98,12 +98,12 @@ class _MyWatchListPage extends State<MyWatchListPage> {
                                 Checkbox(
                                     value:
                                         (snapshot.data![index].fields.watched ==
-                                            'true'),
+                                            true),
                                     activeColor: Colors.blue,
                                     onChanged: (bool? value) {
                                       setState(() {
                                         snapshot.data![index].fields.watched =
-                                            (value!) ? 'true' : "false";
+                                            (value!) ? true : false;
                                       });
                                     }),
                               ],

@@ -3,8 +3,7 @@ import 'package:counter_7/model/my_watchlist.dart';
 import 'dart:convert';
 
 Future<List<MyWatchList>> fetchWatchList() async {
-  var url =
-      Uri.parse('https://lab02-pbp-abdul.herokuapp.com/mywatchlist/json/');
+  var url = Uri.parse('http://127.0.0.1:8000/mywatchlist/json/');
   var response = await http.get(
     url,
     headers: {
@@ -17,9 +16,11 @@ Future<List<MyWatchList>> fetchWatchList() async {
 
   // melakukan konversi data json menjadi object ToDo
   List<MyWatchList> listMyWatch = [];
+  // print(data[1]);
   for (var d in data) {
     if (d != null) {
       listMyWatch.add(MyWatchList.fromJson(d));
+      // print(MyWatchList.fromJson(d).fields.watched);
     }
   }
 

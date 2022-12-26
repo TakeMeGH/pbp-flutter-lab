@@ -8,15 +8,15 @@ class MyDetailPage extends StatefulWidget {
     super.key,
     required this.title,
     required this.releaseDate,
-    required this.rating,
+    this.rating,
     required this.watched,
     required this.review,
   });
 
   final String title;
   final DateTime releaseDate;
-  final int rating;
-  final String watched;
+  final int? rating;
+  final bool watched;
   final String review;
 
   @override
