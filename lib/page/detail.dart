@@ -79,7 +79,7 @@ class _MyDetailPageState extends State<MyDetailPage> {
                     'Status: ',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  if (widget.watched == "true") ...[
+                  if (widget.watched == true) ...[
                     const Text('Watched')
                   ] else ...[
                     const Text('Not Watched')
